@@ -1,0 +1,22 @@
+### VARIABLES
+@SERVER = http://localhost:8000
+
+### GET ALL TODO
+GET {{SERVER}}/api/todos
+
+### ADD A NEW TODO
+POST {{SERVER}}/api/todos
+Content-Type: application/json
+
+{
+    "title": "hi siyabonga"
+}
+
+
+### UPDATE A TODO
+PUT {{SERVER}}/api/todos/4
+
+
+
+### DELETE A TODO
+DELETE {{SERVER}}/api/todos/4
